@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    div{
+      font-weight: bold;
+      color: white;
+    }
+    
+    *{
+      box-sizing: border-box;
+    }
+    
+    #box{
+      margin: 20px;
+      border: 10px solid black;
+      width: 200px;
+      height: 200px;
+      background-color: orange;
+    }
+    
+    .innerBox{
+      width: 50%;
+      height: 50%;
+      background-color: blue;
+      display: inline-block;
+    }
+    
+    #box div:first-of-type{
+      position: relative;
+      top: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div id="box">
+    <div class="innerBox">1</div><!-- Comment to avoid space between tags
+ --><div class="innerBox">2</div>
+  </div>
+</body>
+</html>

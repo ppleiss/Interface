@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div{
+                width: 100vw;
+                height: 50vh;
+                position: relative;
+            }
+            
+            img{
+                width: 50%;
+                height: 50%;
+                position: absolute;
+                top: 25%;
+                left: 25%;
+            }
+            
+            #header{
+                height: 10vh;
+                background-color: green;
+            }
+            
+            #content{
+                height: 90vh;
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <img src="http://placehold.it/250x250"/>
+        </div>
+        <div id="header">
+        </div>
+        <div id="content">
+            <div></div> <!--Added dummy element to avoid margin "white-gap"-->
+            <h1>Header</h1>
+        </div>
+    </body>
+</html>

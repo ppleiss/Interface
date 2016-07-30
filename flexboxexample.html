@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexbox Exercise</title>
+        <style>
+            .wraper{display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;}
+            .header{
+                background: orange;
+            }
+            #wrap2 {
+                display: flex;
+                flex-direction: row;
+        
+            }
+            
+            #wrap2 div:nth-of-type(1) {flex-grow: 1;}
+            #wrap2 div:nth-of-type(2) {flex-grow: 1;}
+            #wrap2 div:nth-of-type(3) {flex-grow: 1;}
+            
+            
+            
+            
+            
+            .main{
+                background: lightblue;
+                flex-grow: 2;
+            }
+            .aside1{background: yellow;
+                flex-grow: 1;
+            }
+            .aside2{
+                background: hotpink;
+                flex-grow: 1;
+            }
+            .footer{
+                background:brown;
+            }
+           
+            .header, .footer {flex: 1 100%;}
+        
+                }
+        </style>
+    
+    
+    
+    </head>
+    <body>
+        <div class="wraper">
+            <header class="header">Header</header>
+            
+            <div id="wrap2">
+                <div>Aside1</div>
+                <div>Lucas ipsum dolor sit amet ben lobot hutt luke endor sidious ahsoka jinn antilles qui-gon. Mon wookiee anakin kit. Zabrak sidious aayla luuke skywalker naboo skywalker chewbacca. Organa c-3po solo aayla chewbacca mothma. Greedo zabrak amidala chewbacca baba palpatine. Boba skywalker organa luke mace hutt. Wicket mace kit hutt k-3po mustafar han. Windu skywalker wicket biggs kamino jinn. Fett coruscant windu jinn jinn solo. Cade c-3p0 lando moff vader fett. Binks biggs tatooine sidious darth twi'lek han skywalker lando.
+                </div>
+                <div>Aside2</div>
+                
+            </div>
+            <div class="footer">Footer</div>
+        
+        </div>
+            
+    </body>
+    
+    
+</html>

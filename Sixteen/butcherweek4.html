@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Interface Web School Week 4 Assignment By: Pat Pleiss -->
+		<title>Sixteen Creative Agency</title>
+		<link href="https://fonts.googleapis.com/css?family=Droid+Serif|Source+Sans+Pro:900" rel="stylesheet">
+    <style>
+        
+            
+		body{
+				margin: 0;
+				}
+		#header{
+				background-color: #acd373;
+				width: 100vw;
+				height: 12.5vh;
+			}
+			#logo{
+				position: absolute;
+				height: 7vh;
+				left: 12.5vw;
+				top:2.75vh;
+				}
+	
+			#background{
+				background-color: #9abd67;
+				width: 100vw;
+				height: 87.5vh;
+				}	
+	
+        /* Media Query #1 */
+            @media all and (min-width: 950px) and (max-width: 1150px) {
+                
+                #logo{
+				        position: absolute;
+				        height: 7vh;
+				        left: 7vw;
+				        top: 2.75vh;
+				    }
+              
+            }
+            /* Media Query #2 */ 
+        @media all and (max-width: 950px){
+                  #logo{
+				        position: absolute;
+				        height: 7vh;
+				        left: 10vw;
+				        top: 2.75vh;
+                }
+                
+                #sixteen{
+				    position: relative;
+				    font-size: 4.5vh;
+				    font-family: "Source Sans Pro", serif;
+				    color: #f7f7f7;
+				    top: 27vh;
+				    margin: 0 auto;
+				    text-align: center;
+				}    
+                #arrow{
+				position: relative;
+				margin: auto;
+				width: 5vw;
+				top: 12vh;
+				}
+             
+                #NewMenu{
+                    position: absolute;
+                    float: right;
+                    height: 12.5vh;
+                    width: 12.5vw;
+                    background-color: #89a85c;
+                 
+                }
+                 #icon{
+                    height: 4vh;
+                    width: 4vw;
+                    margin-top: 4.25vh;
+                    margin-left: 4.25;
+                }
+               
+            }
+		</style>
+		</head>
+		<body>
+			<div id="header">
+				<div id="logo">
+					<img src="logo.png">
+				</div>
+			
+             <div id="NewMenu"><div id="icon">img src="icon.png"></div></div>   
+			</div>
+			<div id="background">
+				
+			</div>
+			<div id="footer">
+				<div><img id="skyline" src="silhouette.png"></div>
+			</div>
+		</body>
+</html>
