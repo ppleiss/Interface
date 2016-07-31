@@ -3,62 +3,54 @@
     <head>
         <title>Flexbox Exercise</title>
         <style>
-            .wraper{display: flex;
-                    flex-wrap: wrap;
-                    flex-direction: row;}
-            .header{
-                background: orange;
-            }
-            #wrap2 {
-                display: flex;
-                flex-direction: row;
-        
-            }
+            .header{background: #4CFF9F;
+                    color: black;}
+            .main  {background: #00BF58;}
+            .aside1{background: #007F3B;}
+            .aside2{background: #00FF76;
+                    color: black;}
+            .footer{background: #00401D;}
             
-            #wrap2 div:nth-of-type(1) {flex-grow: 1;}
-            #wrap2 div:nth-of-type(2) {flex-grow: 1;}
-            #wrap2 div:nth-of-type(3) {flex-grow: 1;}
-            
-            
-            
-            
-            
-            .main{
-                background: lightblue;
-                flex-grow: 2;
-            }
-            .aside1{background: yellow;
-                flex-grow: 1;
-            }
-            .aside2{
-                background: hotpink;
-                flex-grow: 1;
-            }
-            .footer{
-                background:brown;
-            }
+            .wrapper{display: flex;
+                    flex-flow: row wrap;
+                    color: white;}
            
-            .header, .footer {flex: 1 100%;}
-        
+           /* Mobile - We tell all items to be 100% width */
+            header, .aside1, .aside2, article, footer {
+                flex: 1 100%;
+            }
+            /* Medium screens */
+            @media all and (min-width: 600px) { 
+            /* We tell both sidebars to share a row */
+            .aside1, .aside2 {flex: 1 auto;}
+            
+            /* Large screens */
+                @media all and (min-width: 800px) {
+                     
+                    .main { flex: 3 0px; }
+                    
+                    .aside1 { order: 1; }
+                    .main    { order: 2; }
+                    .aside2 { order: 3; }
+                    .footer  { order: 4; }
                 }
+             /* We invert order of first sidebar and main
+       * And tell the main element to take 3x as much width as the other two sidebars 
+       */
+        
+                
         </style>
-    
-    
-    
-    </head>
+ </head>
     <body>
-        <div class="wraper">
+        <div class="wrapper">
             <header class="header">Header</header>
             
-            <div id="wrap2">
-                <div>Aside1</div>
-                <div>Lucas ipsum dolor sit amet ben lobot hutt luke endor sidious ahsoka jinn antilles qui-gon. Mon wookiee anakin kit. Zabrak sidious aayla luuke skywalker naboo skywalker chewbacca. Organa c-3po solo aayla chewbacca mothma. Greedo zabrak amidala chewbacca baba palpatine. Boba skywalker organa luke mace hutt. Wicket mace kit hutt k-3po mustafar han. Windu skywalker wicket biggs kamino jinn. Fett coruscant windu jinn jinn solo. Cade c-3p0 lando moff vader fett. Binks biggs tatooine sidious darth twi'lek han skywalker lando.
-                </div>
-                <div>Aside2</div>
-                
-            </div>
-            <div class="footer">Footer</div>
-        
+            <article class="main">
+                <p> Main. Lucas ipsum dolor sit amet ben lobot hutt luke endor sidious ahsoka jinn antilles qui-gon. Mon wookiee anakin kit. Zabrak sidious aayla luuke skywalker naboo skywalker chewbacca. Organa c-3po solo aayla chewbacca mothma. Greedo zabrak amidala chewbacca baba palpatine. Boba skywalker organa luke mace hutt. Wicket mace kit hutt k-3po mustafar han. Windu skywalker wicket biggs kamino jinn. Fett coruscant windu jinn jinn solo. Cade c-3p0 lando moff vader fett. Binks biggs tatooine sidious darth twi'lek han skywalker lando.</p>
+            </article>
+            <aside class="aside1">Aside1</aside>
+            <aside class="aside2">Aside2</aside>
+            <footer class="footer">Footer</footer>
         </div>
             
     </body>
