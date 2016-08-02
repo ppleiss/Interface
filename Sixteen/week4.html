@@ -3,32 +3,30 @@
 	<head>
 		<!-- Interface Web School Week 4 Assignment By: Pat Pleiss -->
 		<title>Sixteen Creative Agency</title>
-		<link href="https://fonts.googleapis.com/css?family=Droid+Serif|Source+Sans+Pro:900" rel="stylesheet">
-
-        <style>
-            
-		  body{
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+	    <style>
+			
+		body{
 				margin: 0;
 				}
-           img{
-				height: 100%;
-				width: 100%;
-			 } 
-		  #header{
+		#header{
 				background-color: #acd373;
 				width: 100vw;
 				height: 12.5vh;
+				
 			}
-            #logo{
-				position: absolute;
+			#logo{
+				position: relative;
 				height: 7vh;
 				left: 12.5vw;
 				top:2.75vh;
 				}
 			#menu{
-				position: absolute;
+				position: relative;
 				right: 12.5vw;
-				height: 12.5vh;				
+				height: 12.5vh;	
+				float: right;
 				}
              #NewMenu{
                    display:none;
@@ -82,8 +80,8 @@
 				font-family: "Source Sans Pro", serif;
 				color: #f7f7f7;
 				top: 27vh;
-				margin: 0 auto;
 				text-align: center;
+				
 				}
 			#jakarta{
 				position: relative;
@@ -100,7 +98,6 @@
 				margin: auto;
 				width: 3vw;
 				top: 12vh;
-                
 				}
 			#footer{
 				position:absolute;
@@ -113,22 +110,22 @@
 			/* Media Query #1 */
             @media all and (min-width: 950px) and (max-width: 1150px) {
                 #logo{
-				        position: absolute;
-				        height: 7vh;
+				        position: relative;
+						height: 7vh;
 				        left: 7vw;
 				        top: 2.75vh;
 				    }
                #menu{
-				        position: absolute;
-				        right: 7vw;
+				        position: relative;
+				   		right: 7vw;
 				        height: 12.5vh;				
 				    } 
             }
             /* Media Query #2 */ 
             @media all and (max-width: 950px){
                   #logo{
-				        position: absolute;
-				        height: 7vh;
+				      	position: relative;  
+					  	height: 7vh;
 				        left: 10vw;
 				        top: 2.75vh;
                 }
@@ -139,7 +136,6 @@
 				    font-family: "Source Sans Pro", serif;
 				    color: #f7f7f7;
 				    top: 27vh;
-				    margin: 0 auto;
 				    text-align: center;
 				}    
                 #arrow{
@@ -173,10 +169,8 @@
 		</head>
 		<body>
 			<div id="header">
-				<div id="logo">
-					<img src="logo.png">
-				</div>
-			<div id="menu">
+				<img id="logo" src="logo.png">
+				<div id="menu">
 				<ul>
   					<li><a href="#">HOME</a></li>
   					<li><a href="#">ABOUT</a></li>
@@ -187,19 +181,19 @@
 					<li><a href="#">BLOG</a></li>
 					<li><a href="#">CONTACT</a></li>
 				</ul>
-    		</div>
+    			</div>
              	<div id="NewMenu">
-					<div id="icon"><img src="icon.png"></div>
+					<img id="icon" src="icon.png">
 				</div>   
 			</div>
 			<div id="background">
 				<div id="sixteen">WE ARE SIXTEEN CREATIVE AGENCY	
 				<div id="jakarta">Based on Jakarta, Indonesia</div>
-				<div id="arrow"><img src="arrow.png"></div>
+				<img id="arrow" src="arrow.png">
 				</div>
 			</div>
 			<div id="footer">
-				<div><img id="skyline" src="silhouette.png"></div>
+				<img id="skyline" src="silhouette.png">
 			</div>
 		</body>
 </html>
